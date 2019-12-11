@@ -4,7 +4,7 @@ let plus = document.querySelector('#plus');
 let calculate = document.querySelector('#calculate');
 let total = document.querySelector('#total');
 
-plus.addEventListener('click', ()=>{
+plus.addEventListener('click', (n1, n2)=>{
   var sum = n1 + n2;
   return sum;
 });
