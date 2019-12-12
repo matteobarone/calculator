@@ -1,32 +1,32 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
     function add() {
-        var x = Number(document.getElementById('number1').value);
-        var y = Number(document.getElementById('number2').value);
+        var x = parseInt(document.getElementById('number1').value);
+        var y = parseInt(document.getElementById('number2').value);
 
         document.getElementById('total').innerHTML = x + y;
         return false;
     }
 
     function subtract() {
-        var x = Number(document.getElementById('number1').value);
-        var y = Number(document.getElementById('number2').value);
+        var x = parseInt(document.getElementById('number1').value);
+        var y = parseInt(document.getElementById('number2').value);
 
         document.getElementById('total').innerHTML = x - y;
         return false;
     }
 
     function multiply() {
-        var x = Number(document.getElementById('number1').value);
-        var y = Number(document.getElementById('number2').value);
+        var x = parseInt(document.getElementById('number1').value);
+        var y = parseInt(document.getElementById('number2').value);
 
         document.getElementById('total').innerHTML = x * y;
         return false;
     }
 
     function divide() {
-        var x = Number(document.getElementById('number1').value);
-        var y = Number(document.getElementById('number2').value);
+        var x = parseInt(document.getElementById('number1').value);
+        var y = parseInt(document.getElementById('number2').value);
 
         document.getElementById('total').innerHTML = x % y;
         return false;
