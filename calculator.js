@@ -1,39 +1,34 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-        
-        calculate.addEventListener('click', () => {
 
-            let x = parseInt(number1.value);
-            let y = parseInt(number2.value);
+        let opr = document.querySelectorAll('.operators button');
 
-            alert("Number 1 value is:" + " " + x);
-            alert("Number 2 value is:" + " " + y);    
+        opr.forEach(element => element.addEventListener('click', () => {
 
-        });
-
-        let opr = document.querySelectorAll('.operators button');       
-
-        //console.log(opr);        
-        //opr.forEach(element => console.log(element.value));
-
-        opr.forEach(element => element.addEventListener('click', ()=>{
-
-            let x = parseInt(number1.value);
-            let y = parseInt(number2.value);
+            let x = parseInt(document.querySelector('#number1').value); //type: number
+            let y = parseInt(document.querySelector('#number2').value); //type: number
+            let totalElement = document.querySelector('#total'); //type: object
+            let calculateElement = document.querySelector('#calculate'); //type: object           
             
-            switch(element.value){
-                case "plus":
-                    document.getElementById('total').innerHTML = x + y;
-                    break;
-                case "minus":
-                    document.getElementById('total').innerHTML = x - y;
-                    break;
-                case "multi":
-                    document.getElementById('total').innerHTML = x * y;
-                    break;
-                case "divide":
-                    document.getElementById('total').innerHTML = x / y;
-                    break;
-            }
-        }));
-    
+            calculateElement.addEventListener('click', () => {
+            
+                 switch(element.value){
+                        case "plus":
+                            totalElement.innerHTML = x + y;
+                            break;
+                        case "minus":
+                            totalElement.innerHTML = x - y;
+                            break;
+                        case "multi":
+                            totalElement.innerHTML = x * y;
+                            break;
+                        case "divide":
+                            totalElement.innerHTML = x / y;
+                            break;
+                        default:
+                            break;
+                  };     
+
+            });
+            
+        }));  
 });
