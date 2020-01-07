@@ -1,12 +1,12 @@
-import { btnClick } from '/func1.js';
-import { selectElement } from '/func3.js';
+import { btnClick } from './btnClick';
+import { selectElement } from './func3';
 
-let operatorSelected;  
-let n1Element;
-let n2Element;
-let totalElement;
-let btns;
-let calculateElement;
+export let operatorSelected;  
+export let n1Element;
+export let n2Element;
+export let totalElement;
+export let btns;
+export let calculateElement;
 
 export function init() {
     n1Element = document.querySelector('#number1');

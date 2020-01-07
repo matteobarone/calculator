@@ -1,4 +1,4 @@
-import {getOperation} from '/func5.js';
+import {getOperation} from './func5';
 
 export function calculateTotal(value1, value2) {
     if (value1 === '' || value2 === '') {
