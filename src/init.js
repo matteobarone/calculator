@@ -1,6 +1,6 @@
-import{btnClick} from 'btnClick';
-import{selectElement} from 'selectElement';
-import{calculateTotal} from 'calculateTotal';
+import{btnClick} from './btnClick';
+import{selectElement} from './selectElement';
+import{calculateTotal} from './calculateTotal';
 
 //Variabili, sono indipendenti ma da loro dipende la funzione init
 export let operatorSelected;

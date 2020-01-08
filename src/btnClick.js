@@ -1,5 +1,5 @@
-import {deselectAllBtn} from 'deselectAllBtn';
-import {selectElement} from 'selectElement';
+import {deselectAllBtn} from './deselectAllBtn';
+import {selectElement} from './selectElement';
 
 //Nome file: btnClick
 //Dipende da "deselectAllBtn" e "selectElement"
