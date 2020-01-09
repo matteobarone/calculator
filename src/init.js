@@ -9,12 +9,10 @@ export let totalElement;
 export let btns;
 export let calculateElement;
 
-export function selectElement(element) {
-   
+export function selectElement(element) {   
     element.classList.add('selected');
     operatorSelected = element.value;
 }
-
 
 //Nome file: init
 //Dipende dalle variabili in alto, da "btns", da "btnClick", da "selectElement" e  "calculateTotal"
@@ -31,4 +29,4 @@ export function init() {
       totalElement.innerText = calculateTotal(n1Element.value, n2Element.value);
 })
     selectElement(btns[0]);
-};
+}
