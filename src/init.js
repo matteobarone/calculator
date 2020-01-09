@@ -1,5 +1,4 @@
 import{btnClick} from './btnClick';
-import{selectElement} from './selectElement';
 import{calculateTotal} from './calculateTotal';
 
 //Variabili, sono indipendenti ma da loro dipende la funzione init
@@ -9,6 +8,13 @@ export let n2Element;
 export let totalElement;
 export let btns;
 export let calculateElement;
+
+export function selectElement(element) {
+   
+    element.classList.add('selected');
+    operatorSelected = element.value;
+}
+
 
 //Nome file: init
 //Dipende dalle variabili in alto, da "btns", da "btnClick", da "selectElement" e  "calculateTotal"
