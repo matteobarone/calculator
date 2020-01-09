@@ -1,4 +1,4 @@
-import{operatorSelected} from ':/init';
+import{operatorSelected} from './init';
 import{OPERATORS} from './constOperators';
 
 //Nome file: getOperation
