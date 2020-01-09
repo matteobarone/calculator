@@ -1,5 +1,5 @@
-import{operatorSelected} from 'init';
-import{OPERATORS} from 'constOperators';
+import{operatorSelected} from ':/init';
+import{OPERATORS} from './constOperators';
 
 //Nome file: getOperation
 //Dipende da "operatorSelected", presente e definita in "init"

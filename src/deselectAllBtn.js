@@ -1,4 +1,4 @@
-import{btns} from 'init';
+import{btns} from './init';
 
 //Nome file: deselectAllBtn
 //Dipende solo da "btns"

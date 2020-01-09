@@ -1,4 +1,4 @@
-import{getOperation} from 'getOperation';
+import{getOperation} from './getOperation';
 
 //Nome file: calculateTotal
 //Dipende solo da "getOperation"
