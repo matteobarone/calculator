@@ -1,9 +1,9 @@
 import{operatorSelected} from './init';
-import{OPERATORS} from './constOperators';
+import{OPERATORS} from './operators';
 
 //Nome file: getOperation
 //Dipende da "operatorSelected", presente e definita in "init"
-//Dipende dagli operatori, definiti in ConstOperators
+//Dipende dagli operatori, definiti in Operators
   export function getOperation(n1, n2) {
     switch(operatorSelected) {
       case OPERATORS.plus:

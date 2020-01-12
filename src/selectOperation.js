@@ -1,9 +1,9 @@
 import {deselectAllBtn} from './deselectAllBtn';
 import {selectElement} from './init';
 
-//Nome file: btnClick
+//Nome file: selectOperation
 //Dipende da "deselectAllBtn" e "selectElement"
-export function btnClick(e) {
+export function selectOperation(e) {
     deselectAllBtn();
     selectElement(e.target);
 }
